@@ -35,6 +35,22 @@ services:
     depends_on:
       - web
 
+  bot:
+    build:
+      context: ./command_project_
+      dockerfile: Dockerfile.bot
+
+    restart: always
+    volumes:
+      - media_volume:/home/app/web/media
+
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - db
+      - web
+      - nginx
+
 volumes:
   postgres_data:
   static_volume:
