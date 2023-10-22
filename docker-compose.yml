@@ -31,10 +31,9 @@ services:
       - media_volume:/home/app/web/media
 
     ports:
-      - "5000:80"
+      - "8123:80"
     depends_on:
       - web
-
   bot:
     build:
       context: ./command_project_
