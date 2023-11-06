@@ -49,7 +49,7 @@ services:
 
       - 433
     env_file:
-      - ./.env.dev
+      - ./.env.bot.dev
     depends_on:
       - db
       - web
