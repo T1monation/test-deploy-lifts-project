@@ -11,6 +11,7 @@ services:
       - static_volume:/home/app/web/static
       - media_volume:/home/app/web/media
       - web_logs:/home/app/web/logs
+      - bot_logs:/home/app/web/bot_logs
     expose:
       - 8000
     env_file:
