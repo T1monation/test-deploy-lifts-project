@@ -24,9 +24,10 @@ services:
       - static_volume:/home/app/web/static
       - media_volume:/home/app/web/media
       - web_logs:/home/app/web/logs
+      - ./nginx/logs:/etc/nginx/logs
 
     ports:
-      - "8123:80"
+      - "8125:80"
     depends_on:
       - web
 
