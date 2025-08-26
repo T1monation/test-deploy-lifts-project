@@ -27,7 +27,7 @@ services:
       - ./nginx/logs:/etc/nginx/logs
 
     ports:
-      - "8125:80"
+      - "80:80"
     depends_on:
       - web
 

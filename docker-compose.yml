@@ -33,7 +33,7 @@ services:
       - media_volume:/home/app/web/media
 
     ports:
-      - "8123:80"
+      - "80:80"
     depends_on:
       - web
 
